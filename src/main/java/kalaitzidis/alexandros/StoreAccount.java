@@ -1,4 +1,4 @@
-import jdk.jfr.Category;
+package kalaitzidis.alexandros;
 
 public class StoreAccount extends Account {
     private String storeName;
@@ -27,14 +27,6 @@ public class StoreAccount extends Account {
 
     public void setAccountCategory(String accountCategory) {
         this.accountCategory = accountCategory;
-    }
-
-    public void withdraw(double amount) {
-
-    }
-
-    public void deposit(double amount) {
-
     }
 
     public void changeCategory(String Category) {

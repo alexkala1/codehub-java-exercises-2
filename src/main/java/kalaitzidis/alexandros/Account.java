@@ -1,3 +1,5 @@
+package kalaitzidis.alexandros;
+
 public class Account {
     private String owner;
     private double balance;
