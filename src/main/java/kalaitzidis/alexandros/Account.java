@@ -3,7 +3,7 @@ package kalaitzidis.alexandros;
 public class Account {
     private String owner;
     private double balance;
-    private int numberOfTransactions;
+    private int numberOfTransactions = 0;
 
     public Account() {
     }
@@ -39,10 +39,13 @@ public class Account {
     }
 
     public void withdraw(double amount) {
-
+        if (balance > amount)
+            balance -= amount;
+        numberOfTransactions++;
     }
 
     public void deposit(double amount) {
-
+        balance += amount;
+        numberOfTransactions++;
     }
 }
