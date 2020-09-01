@@ -21,6 +21,7 @@ public class Ui {
         invStore.buy(x4);
         invStore.sell(x1);
         System.out.println(invStore.getRevenue());
-        invStore.sell(x2); invStore.getInventory();
+        invStore.sell(x2);
+        invStore.getInventory();
     }
 }

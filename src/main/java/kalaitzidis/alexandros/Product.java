@@ -47,4 +47,14 @@ public class Product {
     public void setPriceWhenSell(double priceWhenSell) {
         this.priceWhenSell = priceWhenSell;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", priceWhenBuy=" + priceWhenBuy +
+                ", priceWhenSell=" + priceWhenSell +
+                '}';
+    }
 }

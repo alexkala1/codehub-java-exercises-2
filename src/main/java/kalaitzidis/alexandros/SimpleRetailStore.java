@@ -7,40 +7,19 @@ public class SimpleRetailStore implements IStore{
     public SimpleRetailStore() {
     }
 
-    public SimpleRetailStore(double totalBuyBalance, double totalSellBalance) {
-        this.totalBuyBalance = totalBuyBalance;
-        this.totalSellBalance = totalSellBalance;
-    }
-
-    public double getTotalBuyBalance() {
-        return totalBuyBalance;
-    }
-
-    public void setTotalBuyBalance(double totalBuyBalance) {
-        this.totalBuyBalance = totalBuyBalance;
-    }
-
-    public double getTotalSellBalance() {
-        return totalSellBalance;
-    }
-
-    public void setTotalSellBalance(double totalSellBalance) {
-        this.totalSellBalance = totalSellBalance;
-    }
-
     @Override
     public void buy(Product product) {
-
+        this.totalBuyBalance = product.getPriceWhenBuy();
     }
 
     @Override
     public void sell(Product product) {
-
+        this.totalSellBalance = product.getPriceWhenSell();
     }
 
     @Override
     public double getRevenue() {
-        return 0;
+        return totalSellBalance - totalBuyBalance;
     }
 
     @Override
