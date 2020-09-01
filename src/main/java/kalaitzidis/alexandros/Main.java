@@ -3,6 +3,7 @@ package kalaitzidis.alexandros;
 public class Main {
     public static void main(String[] args) {
         Ui ui = new Ui();
-        ui.run();
+        ui.runSimpleRetailStore();
+        ui.runInventoryRetailStore();
     }
 }

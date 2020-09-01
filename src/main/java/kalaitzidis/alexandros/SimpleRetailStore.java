@@ -42,4 +42,9 @@ public class SimpleRetailStore implements IStore{
     public double getRevenue() {
         return 0;
     }
+
+    @Override
+    public void getInventory() {
+
+    }
 }
