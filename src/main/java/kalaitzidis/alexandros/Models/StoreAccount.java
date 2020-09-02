@@ -7,6 +7,7 @@ public class StoreAccount extends Account {
 
 
     public StoreAccount(String storeName, String accountCategory) {
+        super();
         this.storeName = storeName;
         this.accountCategory = accountCategory;
     }
