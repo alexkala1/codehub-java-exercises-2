@@ -12,12 +12,12 @@ public class SimpleRetailStore extends Store {
 
     @Override
     public void buy(Product product) {
-        this.totalBuyBalance = product.getPriceWhenBuy();
+        this.totalBuyBalance += product.getPriceWhenBuy();
     }
 
     @Override
     public void sell(Product product) {
-        this.totalSellBalance = product.getPriceWhenSell();
+        this.totalSellBalance += product.getPriceWhenSell();
     }
 
     @Override
