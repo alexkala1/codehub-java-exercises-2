@@ -42,13 +42,13 @@ public class Account {
         if (balance > amount)
             balance -= amount;
         numberOfTransactions++;
-        System.out.println("You withdrew " + amount + " and now your updated balance is " + balance);
+        System.out.println("You have made a withdrawal of " + amount + " and now your updated balance is " + balance);
     }
 
     public void deposit(double amount) {
         balance += amount;
         numberOfTransactions++;
-        System.out.println("You deposited " + amount + " and now your updated balance is " + balance);
+        System.out.println("You have made a deposit of " + amount + " and now your updated balance is " + balance);
     }
 
     @Override
