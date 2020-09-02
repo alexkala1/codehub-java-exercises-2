@@ -1,4 +1,9 @@
-package kalaitzidis.alexandros;
+package kalaitzidis.alexandros.Services;
+
+import kalaitzidis.alexandros.StoreCategories.InventoryRetailStore;
+import kalaitzidis.alexandros.Models.IStore;
+import kalaitzidis.alexandros.Models.Product;
+import kalaitzidis.alexandros.StoreCategories.SimpleRetailStore;
 
 public class Ui {
     public void runSimpleRetailStore() {

@@ -1,9 +1,12 @@
-package kalaitzidis.alexandros;
+package kalaitzidis.alexandros.StoreCategories;
+
+import kalaitzidis.alexandros.Models.Product;
+import kalaitzidis.alexandros.Models.Store;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class InventoryRetailStore implements IStore {
+public class InventoryRetailStore extends Store {
     private List<Product> productList = new ArrayList<>();
 
     public InventoryRetailStore() {

@@ -1,6 +1,9 @@
-package kalaitzidis.alexandros;
+package kalaitzidis.alexandros.StoreCategories;
 
-public class SimpleRetailStore implements IStore{
+import kalaitzidis.alexandros.Models.Product;
+import kalaitzidis.alexandros.Models.Store;
+
+public class SimpleRetailStore extends Store {
     private double totalBuyBalance;
     private double totalSellBalance;
 

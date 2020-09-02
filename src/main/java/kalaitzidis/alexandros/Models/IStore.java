@@ -1,4 +1,4 @@
-package kalaitzidis.alexandros;
+package kalaitzidis.alexandros.Models;
 
 public interface IStore {
     void buy(Product product);

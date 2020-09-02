@@ -1,4 +1,4 @@
-package kalaitzidis.alexandros;
+package kalaitzidis.alexandros.Models;
 
 public class Product {
     private int id;
