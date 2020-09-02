@@ -1,4 +1,4 @@
-package kalaitzidis.alexandros;
+package kalaitzidis.alexandros.Models;
 
 public class Account {
     private String owner;
@@ -18,10 +18,21 @@ public class Account {
         if (balance > amount)
             balance -= amount;
         numberOfTransactions++;
+        System.out.println("You withdrew " + amount + " and now your updated balance is " + balance);
     }
 
     public void deposit(double amount) {
         balance += amount;
         numberOfTransactions++;
+        System.out.println("You deposited " + amount + " and now your updated balance is " + balance);
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "owner='" + owner + '\'' +
+                ", balance=" + balance +
+                ", numberOfTransactions=" + numberOfTransactions +
+                '}';
     }
 }

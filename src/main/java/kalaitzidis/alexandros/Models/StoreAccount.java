@@ -1,22 +1,20 @@
-package kalaitzidis.alexandros;
+package kalaitzidis.alexandros.Models;
 
 public class StoreAccount extends Account {
     private String storeName;
     private String accountCategory;
     private Categories categories;
 
-    public StoreAccount() {
-    }
 
     public StoreAccount(String storeName, String accountCategory) {
         this.storeName = storeName;
         this.accountCategory = accountCategory;
     }
 
-    public void changeCategory(StoreAccount store, String Category) {
+    public void changeCategory(String Category) {
         for (Categories category : categories.values()) {
-            if (category.toString().equals(Category)) {
-                store.accountCategory = Category;
+            if (Category.equalsIgnoreCase(category.toString())) {
+                this.accountCategory = category.toString();
                 break;
             }
         }
@@ -27,7 +25,6 @@ public class StoreAccount extends Account {
         return "StoreAccount{" +
                 "storeName='" + storeName + '\'' +
                 ", accountCategory='" + accountCategory + '\'' +
-                ", categories=" + categories +
                 '}';
     }
 }
